@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1>CALCULATOR</h1> -->
+    <div class="container">
+        <div class="cal-head">
+            <input type="text" id="result" maxlength="10">
+        </div>
+        <div class="cal-body">
+            <div>
+                <input type="button" onclick="clearReault()" class="btn" style="color: red !important;" value="C">
+                <input type="button" onclick="squreRoot()" class="btn" value="&radic;" style="color: red !important;">
+                <input type="button" onclick="deleteNumber()" class="btn" style="color: red !important;" value='&larr;'>
+                <input type="button" onclick="insertNumber('/')" class="btn" value="/" style="color: red !important;">
+            </div>
+
+            <div>
+                <input type="button" onclick="insertNumber(7)" class="btn" value="7">
+                <input type="button" onclick="insertNumber(8)" class="btn" value="8">
+                <input type="button" onclick="insertNumber(9)" class="btn" value="9">
+                <input type="button" onclick="insertNumber('*')" class="btn " value="x" style="color: red !important;">
+            </div>
+
+            <div>
+                <input type="button" onclick="insertNumber(4)" class="btn" value="4">
+                <input type="button" onclick="insertNumber(5)" class="btn" value="5">
+                <input type="button" onclick="insertNumber(6)" class="btn" value="6">
+                <input type="button" onclick="insertNumber('-')" class="btn " value="-" style="color: red !important;">
+            </div>
+
+            <div>
+                <input type="button" onclick="insertNumber(1)" class="btn" value="1">
+                <input type="button" onclick="insertNumber(2)" class="btn" value="2">
+                <input type="button" onclick="insertNumber(3)" class="btn" value="3">
+                <input type="button" onclick="insertNumber('+')" class="btn" value="+" style="color: red !important;">
+            </div>
+
+            <div>
+                <input type="button" onclick="insertNumber(0)" class="btn" value="0">
+                <input type="button" onclick="insertNumber('.')" class="btn" value=".">
+                <input type="button"  onclick="deleteNumber()" class="btn" value="DEL" style="color: red !important;">
+                <input type="button" onclick="calculate()" class="btn btn1" value="=" style="color: red !important;">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
